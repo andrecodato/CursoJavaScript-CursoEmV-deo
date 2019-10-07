@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 011</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade nos EUA</h1>
+    <input type="text" name="campoPais" id="campoPais" placeholder="Digite seu país natal.">
+    <input type="button" value="Verificar" id="botaoVerificar" onclick="verificacao()">
+    <div id="resultadoVerificacao">
+
+    <script>
+        function verificacao() {
+            var pais = document.querySelector('input#campoPais').value
+            //alert(pais) //teste
+
+            var resultado = document.querySelector('div#resultadoVerificacao')
+            resultado.innerHTML = `Seu país natal é <strong>${pais}</strong>, vivendo nos EUA você é `
+            if (pais == 'EUA'){
+                resultado.innerHTML += 'Estado Unidense!'
+            } else {
+                resultado.innerHTML += 'Estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analizador de números</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Analizador de números</h1>
+    </header>
+    <section>
+        <p>Número (entre 1 e 100): <input type="number" id="campoNumero">
+        <input type="button" value="Adicionar" onclick="adicionarNumero()"></p>
+
+        <p><select id="select" size="10" >
+            
+        </select></p>
+
+        <p><input type="button" value="Finalizar" onclick="finalizarAnalize()"></p>
+
+        <div id="resultado">
+            
+        </div>
+    </section>
+    <footer>
+        <p id="teste"></p>
+        <p>&copy; AndréCodato</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
